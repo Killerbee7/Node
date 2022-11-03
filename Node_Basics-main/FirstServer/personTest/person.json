@@ -1,0 +1,15 @@
+{
+    "Matt":{
+        "firstname":"Matt",
+        "lastname":"River",
+        "age":20,
+        "member":true
+    },
+    "Vera":{
+        "firstname":"Vera",
+        "lastname":"River",
+        "age":24,
+        "member":true
+        }
+    
+}
