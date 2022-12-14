@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+    <link rel="stylesheet" href="/styles/basicStyles.css">
+</head>
+<body>
+    <h1>Cars</h1>
+    <% if(cars.length===0){ %>
+        <h3>No cars found!</h3>
+    <% } else { %>
+        <table>
+            <thead>
+                <tr><th>Model</th><th>Licence</th></tr>
+            </thead>
+            <tbody>
+                <% cars.forEach( car =>{ %>
+                    <tr>
+                        <td><%= car.model %></td><td><%= car.licence %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    <% } %>
+    
+    <a href="/">Home</a>
+</body>
+</html>

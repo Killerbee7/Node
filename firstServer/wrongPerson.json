@@ -1,0 +1,7 @@
+{
+    //comments aren't allowed in json file
+    firstname:'Vera',
+    "lastaname": "River",
+    'notes':`vera is ${person.age
+    }` //this takes the age of Matt
+}

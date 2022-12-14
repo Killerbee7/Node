@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+    <link rel="stylesheet" href="/styles/basicStyles.css">
+</head>
+<body>
+    <h1>All cars</h1>
+    <table>
+        <thead>
+            <tr><th>Model</th><th>Licence</th></tr>
+        </thead>
+        <tbody>
+            <% cars.forEach( car =>{ %>
+                <tr>
+                    <td><%= car.model %></td><td><%= car.licence %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+    <a href="/">Home</a>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.hidden{
+    display:none;
+}
+
+label{
+    font-weight: bold;
+}
+
+main{
+    display: grid;
+    justify-items: center;
+}
+
+section{
+    margin-top: 1em;
+    padding:1em;
+}
+table{
+    border-collapse: collapse;
+}
