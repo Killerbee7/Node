@@ -17,7 +17,7 @@
      </header>
 
     <main>
-        <h1><%= header1 %></h1>
+        <h2><%= header1 %></h2>
         <form action="<%= action %>" method="POST">
             <div>
                 <p>
@@ -32,7 +32,7 @@
                 </p>
                 <p>
                     <label for="model">Model:</label>
-                    <input type="number" id="model" name="model" size="25"
+                    <input type="text" id="model" name="model" size="25"
                     value="<%= model.value %>" <%= model.readonly %> >
                 </p>
                 <p>
@@ -46,7 +46,7 @@
                     value="<%= amount.value %>" <%= amount.readonly %> >
                 </p>
             </div>
-            <button type="submit">Submit</button>
+            <button class="button-62" type="submit">Submit</button>
         </form>
         
     </main>

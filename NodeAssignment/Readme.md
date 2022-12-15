@@ -1,27 +1,6 @@
-# Employee data storage
+# Product Data Storage Assignment -- Node
 
-## employee.json
 
-```json
-[
-    {
-        "id": 1,
-        "name": "Matt",
-        "model": "River",
-        "type": "ict",
-        "amount": 4000
-    },
-    {
-        "id": 1,
-        "name": "FF",
-        "model": "Khola",
-        "type": "ict",
-        "amount": 400
-    }
-]
-```
-
-id is unique!
 
 ### Public API (methods of Datastorage class)
 

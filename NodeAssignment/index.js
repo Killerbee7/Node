@@ -15,7 +15,7 @@ app.set('view engine','ejs');
 app.set('views', path.join(__dirname,'pages'));
 
 app.use(express.urlencoded({extended:false}));
-app.use(express.static(path.join(__dirname,'/public')));
+app.use(express.static(path.join(__dirname,'public')));
 
 const menuPath=path.join(__dirname,'menu.html');
 
@@ -43,10 +43,10 @@ app.post('/getProduct', (req,res)=>{
 
 });
 
-app.get('/inputform', (req,res)=> 
+app.get('/inputForm', (req,res)=> 
     res.render('form',{
         title:'Add Product',
-        header1:'Add a new Product',
+        header1:'Add a New Product',
         action:'/input',
         id:{value:'', readonly:''},
         name: { value: '', readonly: '' },
@@ -63,11 +63,11 @@ app.post('/input', (req,res)=>{
         .catch(error=>sendErrorPage(res,error))
 });
 
-app.get('/updateform', (req, res) =>
+app.get('/updateForm', (req, res) =>
     res.render('form', {
         title: 'Update Product',
-        header1: 'Update Product data',
-        action: '/updatedata',
+        header1: 'Update Product Data',
+        action: '/updateData',
         id: { value: '', readonly: '' },
         name: { value: '', readonly: 'readonly' },
         model: { value: '', readonly: 'readonly' },
@@ -75,7 +75,7 @@ app.get('/updateform', (req, res) =>
         amount: { value: '', readonly: 'readonly' }
     }));
 
-app.post('/updatedata', (req,res)=>{
+app.post('/updateData', (req,res)=>{
     if(!req.body) return res.sendStatus(500);
 
     dataStorage.getOne(req.body.id)
@@ -105,7 +105,7 @@ app.post('/update', (req, res) => {
 app.get('/removeProduct', (req, res) =>
     res.render('getProduct', {
         title: 'Remove',
-        header1: 'remove',
+        header1: 'Remove Product',
         action: '/removeProduct'
     })
 );
@@ -121,3 +121,11 @@ app.post('/removeProduct', (req, res) => {
 });
 
 app.listen(port,host, ()=>console.log(`Server ${host}:${port} listening...`));
+
+function sendErrorPage(res, error, title='Error',header1='Error'){
+    sendStatusPage(res,error,title,header1);
+}
+
+function sendStatusPage(res, status,title='Status',header1='Status'){
+    return res.render('statusPage',{title,header1,status});
+}

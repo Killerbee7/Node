@@ -14,7 +14,7 @@ const CODES = {
 
 const MESSAGES = {
     PROGRAM_ERROR: () => ({
-        message: 'Sorry! Error in our program',
+        message: 'Sorry! Error',
         code: CODES.PROGRAM_ERROR,
         type: 'error'
     }),
@@ -29,7 +29,7 @@ const MESSAGES = {
         type: 'info'
     }),
     NOT_INSERTED: ()=>({
-        message:'Product not inserted.',
+        message:'Product was not inserted.',
         code:CODES.NOT_INSERTED,
         type:'error'
     }),
