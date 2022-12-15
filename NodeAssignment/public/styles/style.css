@@ -1,0 +1,66 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding-left: 1rem;
+
+    
+}
+header a{
+    text-decoration: none;
+    color: white;
+    margin-left: 2rem;
+    
+}
+
+header a {
+    
+    color: white;
+    margin: 0;
+    align-items: center ;
+    
+ 
+ }
+ header a{
+ display: flex;
+ justify-content: space-between;
+ margin: 2rem;
+ list-style-type: none;
+ 
+ }
+ 
+ header  a{
+    text-decoration: none;
+    color: white;
+    margin-left: 2rem;
+    
+ 
+ }
+
+ h1{
+    color: red;
+ }
+
+
+ main, form {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+input[readonly]{
+    background-color: lightgray;
+}
+
+table{
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+table, th,td{
+    border:solid black 1px;
+    padding: 0.5em;
+}
